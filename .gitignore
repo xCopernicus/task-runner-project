@@ -112,3 +112,4 @@ dist
 #others
 .DS_Store
 vendor/
+images/

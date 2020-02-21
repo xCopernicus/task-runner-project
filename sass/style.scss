@@ -5,4 +5,13 @@ $font-text: 'Montserrat', sans-serif;
 
 $color-one: #f1c40f;
 $color-two: #7f8c8d;
-$color-tree: #ecf0f1;
+$color-three: #ecf0f1;
+
+/* Global */
+
+body {
+  font-family: $font-text;
+  font-size: 16px;
+  line-height: 1.7;
+  color: $color-three;
+}

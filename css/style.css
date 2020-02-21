@@ -1,2 +1,9 @@
 /* Variables */
+/* Global */
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #ecf0f1;
+}
 /*# sourceMappingURL=style.css.map */
