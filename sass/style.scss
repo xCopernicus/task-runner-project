@@ -11,7 +11,83 @@ $color-three: #ecf0f1;
 
 body {
   font-family: $font-text;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.7;
-  color: $color-three;
+  margin: 0;
+  padding: 0;
+}
+
+/* Splash */
+
+.splash {
+  background-image: url(https://i.postimg.cc/wTp1YDDW/red-and-blue-hot-air-balloon-floating-on-air-on-body-of-36487.jpg);
+  background-position: center center;
+  background-size: cover;
+//  background-attachment: fixed;
+  height: 100vh;
+}
+
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+.navbar-menu {
+  padding: 0;
+}
+
+.navbtn {
+  padding-left: 40px;
+}
+
+.btn-link {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+}
+
+.btn-nav {
+  padding: 3px;
+}
+
+.welcometxt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  width: 1000px;
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcometxt h1, .welcometxt h2 {
+  color: #fff;
+}
+
+.welcometxt h1 {
+  font-size: 64px;
+  margin: 20px;
+}
+
+.welcometxt h2 {
+  font-size: 48px;
+  margin: 0;
+  font-family: $font-title;
+}
+
+.btn-tellmore{
+  font-size: 20px;
+  display: inline-block;
+  background-color: $color-one;
+  width: 300px;
+  height: 80px;
+  border-radius: 7px;
+  text-align: center;
+  padding: 22px;
+  margin-top: 30px;
 }
