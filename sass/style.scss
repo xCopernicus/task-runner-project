@@ -17,6 +17,26 @@ body {
   padding: 0;
 }
 
+p {
+  color: $color-two;
+  font-family: $font-text;
+}
+
+.section-title {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.section-title h3 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.section-title p {
+  margin: 0;
+  font-style: italic;
+}
+
 /* Splash */
 
 .splash {
@@ -105,4 +125,34 @@ body {
   text-align: center;
   padding: 22px;
   margin-top: 30px;
+}
+
+/* Services */
+
+.row-services {
+  margin: 100px 0;
+
+}
+
+.service {
+  text-align: center;
+}
+
+.service i {
+  transform: scale(2.5);
+  color: $color-one;
+  border-radius: 50%;
+  border-color: $color-one;
+  border: 1px solid;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+
+.service h4 {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.service p {
+  margin-top: 5px;
 }
