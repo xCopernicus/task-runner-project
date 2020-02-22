@@ -22,14 +22,31 @@ body {
   -ms-flex-align: center;
       align-items: center;
   height: 100px;
+  align-items: center;
+}
+
+.logo {
+  padding: 50px;
+  height: 100%;
+}
+
+.pagelogo {
+  color: #fff;
+  transform: scale(4);
+  color: #f1c40f;
 }
 
 .navbar-menu {
   padding: 0;
+  height: 100%;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
 }
 
 .navbtn {
-  padding-left: 40px;
+  padding-left: 20px;
 }
 
 .btn-link {
@@ -42,7 +59,7 @@ body {
 }
 
 .btn-nav {
-  padding: 3px;
+  padding: 20px 13px;
 }
 
 .welcometxt {
