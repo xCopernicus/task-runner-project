@@ -138,8 +138,10 @@ p {
   border-radius: 50%;
   border-color: #f1c40f;
   border: 1px solid;
-  padding: 5px;
+  padding-top: 6px;
   margin-bottom: 15px;
+  height: 27.75px;
+  width: 27.75px;
 }
 
 .service h4 {
