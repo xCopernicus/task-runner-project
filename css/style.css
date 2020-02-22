@@ -13,8 +13,11 @@ p {
   font-family: "Roboto Slab", sans-serif;
 }
 
+section {
+  padding: 100px 0;
+}
+
 .section-title {
-  margin-top: 100px;
   text-align: center;
 }
 
@@ -88,7 +91,7 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -40%);
-  width: 1000px;
+  width: 100%;
   height: auto;
   -ms-flex-direction: column;
       flex-direction: column;
@@ -125,7 +128,7 @@ p {
 
 /* Services */
 .row-services {
-  margin: 100px 0;
+  margin-top: 100px;
 }
 
 .service {
