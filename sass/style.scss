@@ -23,7 +23,7 @@ body {
   background-image: url(https://i.postimg.cc/wTp1YDDW/red-and-blue-hot-air-balloon-floating-on-air-on-body-of-36487.jpg);
   background-position: center center;
   background-size: cover;
-//  background-attachment: fixed;
+  background-attachment: fixed;
   height: 100vh;
 }
 
@@ -43,7 +43,6 @@ body {
   color: #fff;
   transform: scale(4);
   color: $color-one;
-//  transform: translateX(-1px);
 }
 
 .navbar-menu {
