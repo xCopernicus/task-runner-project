@@ -223,3 +223,34 @@ section {
   margin: 0;
   font-style: italic;
 }
+
+/* Footer */
+
+
+.row-footer {
+  margin: 50px 0;
+}
+
+.copyright {
+
+}
+
+.socialmedia {
+  text-align: center;
+}
+
+.socialmedia a {
+  font-size: 0;
+}
+
+.socialmedia i {
+  background-color: black;
+  color: #fff;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  transform: scale(1.5);
+  margin: 10px 15px;
+  padding-top: 8px;
+  font-size: 14px;
+}
