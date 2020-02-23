@@ -112,6 +112,7 @@ section {
   font-size: 48px;
   margin: 0;
   font-family: "Roboto Slab", sans-serif;
+  font-style: italic;
 }
 
 .btn-tellmore {
@@ -154,5 +155,65 @@ section {
 
 .service p {
   margin-top: 5px;
+}
+
+/* Trips */
+.trips {
+  background-color: #ecf0f1;
+}
+
+.title-trips {
+  margin-bottom: 100px;
+}
+
+.row-trips {
+  height: 500px;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin: 0;
+}
+
+.row-trips-1 {
+  margin: 50px 0;
+}
+
+.trip {
+  -ms-flex-direction: column;
+      flex-direction: column;
+  padding: 0;
+  -ms-flex-align: center;
+      align-items: center;
+  background-color: #fff;
+  max-width: 350px;
+  max-height: 500px;
+}
+
+.img-trip {
+  width: 100%;
+  height: 77%;
+  padding: 0;
+}
+
+.img-trip img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.caption-trip {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.caption-trip h4 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.caption-trip p {
+  margin: 0;
+  font-style: italic;
 }
 /*# sourceMappingURL=style.css.map */
