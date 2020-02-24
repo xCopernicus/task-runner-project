@@ -46,7 +46,7 @@ section {
 
 .splash {
   background-image: url(https://i.postimg.cc/wTp1YDDW/red-and-blue-hot-air-balloon-floating-on-air-on-body-of-36487.jpg);
-  background-position: center center;
+  background-position: center;
   background-size: cover;
   background-attachment: fixed;
   height: 100vh;
@@ -331,16 +331,3 @@ section {
   }
 
 }
-
-/*@media (max-width: 576px) {
-  .trip {
-    width: 300px;
-  }
-}
-
-@media (max-width: 1024px) {
-  .trip {
-    max-width: 300px;
-    margin: 0 5px;
-  }
-}*/
