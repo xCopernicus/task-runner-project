@@ -3,9 +3,11 @@
 $font-text: 'Roboto Slab', sans-serif;
 $font-title: 'Montserrat', sans-serif;
 
-$color-one: #f1c40f;
-$color-two: #7f8c8d;
-$color-three: #ecf0f1;
+$color-primary: #f1c40f;
+$color-secondary: #ecf0f1;
+$color-text: #7f8c8d;
+$color-black: black;
+$color-white: #fff;
 
 /* Global */
 
@@ -18,7 +20,7 @@ body {
 }
 
 p {
-  color: $color-two;
+  color: $color-text;
   font-family: $font-text;
 }
 
@@ -54,7 +56,7 @@ section {
   justify-content: space-between;
   align-items: center;
   height: 100px;
-  align-items: center;
+  margin: 0;
 }
 
 .logo {
@@ -62,10 +64,10 @@ section {
   height: 100%;
 }
 
-.pagelogo {
-  color: #fff;
+.logo i {
+  color: $color-white;
   transform: scale(4);
-  color: $color-one;
+  color: $color-primary;
 }
 
 .navbar-menu {
@@ -75,24 +77,21 @@ section {
   align-items: center;
 }
 
-.navbtn {
-  padding-left: 20px;
+.btn-nav {
+  padding-left: 18px;
 }
 
 .btn-link {
   display: block;
   text-align: center;
   text-decoration: none;
-  color: #fff;
+  color: $color-white;
   width: 100%;
   height: 100%;
-}
-
-.btn-nav {
   padding: 20px 13px;
 }
 
-.welcometxt {
+.welcome-txt {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -101,18 +100,20 @@ section {
   height: auto;
   flex-direction: column;
   align-items: center;
+  margin: 0 auto;
 }
 
-.welcometxt h1, .welcometxt h2 {
-  color: #fff;
+.welcome-txt h1, .welcome-txt h2 {
+  color: $color-white;
+  text-align: center;
 }
 
-.welcometxt h1 {
+.welcome-txt h1 {
   font-size: 64px;
   margin: 20px;
 }
 
-.welcometxt h2 {
+.welcome-txt h2 {
   font-size: 48px;
   margin: 0;
   font-family: $font-text;
@@ -122,7 +123,7 @@ section {
 .btn-tellmore{
   font-size: 20px;
   display: inline-block;
-  background-color: $color-one;
+  background-color: $color-primary;
   width: 300px;
   height: 80px;
   border-radius: 7px;
@@ -143,9 +144,9 @@ section {
 
 .service i {
   transform: scale(2.5);
-  color: $color-one;
+  color: $color-primary;
   border-radius: 50%;
-  border-color: $color-one;
+  border-color: $color-primary;
   border: 1px solid;
   padding-top: 6px;
   margin-bottom: 15px;
@@ -165,7 +166,7 @@ section {
 /* Trips */
 
 .trips {
-  background-color: $color-three;
+  background-color: $color-secondary;
 }
 
 .title-trips {
@@ -186,9 +187,10 @@ section {
   flex-direction: column;
   padding: 0;
   align-items: center;
-  background-color: #fff;
+  background-color: $color-white;
   max-width: 350px;
-  max-height: 500px;
+  height: 500px;
+  width: 350px;
 }
 
 .link-trip {
@@ -216,7 +218,7 @@ section {
 .caption-trip h4 {
   margin: 0;
   font-size: 20px;
-  color: black;
+  color: $color-black;
 }
 
 .caption-trip p {
@@ -231,21 +233,17 @@ section {
   margin: 50px 0;
 }
 
-.copyright {
-
-}
-
-.socialmedia {
+.social-media {
   text-align: center;
 }
 
-.socialmedia a {
+.social-media a {
   font-size: 0;
 }
 
-.socialmedia i {
-  background-color: black;
-  color: #fff;
+.social-media i {
+  background-color: $color-black;
+  color: $color-white;
   border-radius: 50%;
   height: 30px;
   width: 30px;
@@ -254,3 +252,95 @@ section {
   padding-top: 8px;
   font-size: 14px;
 }
+
+/* Media */
+
+@media (max-width: 768px) {
+
+  /* Splash */
+
+  .navbar {
+    height: 40px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .navbar-menu {
+    height: 30px;
+    justify-content: flex-start;
+    text-align: center;
+  }
+
+  .btn-nav {
+    padding-left: 1px;
+  }
+
+  .btn-link {
+    padding: 0 5px;
+  }
+
+  .welcome-txt h1 {
+    font-size: 24px;
+  }
+
+  .welcome-txt h2 {
+    font-size: 32px;
+  }
+
+  .btn-tellmore {
+    padding: 22px;
+  }
+
+  /* Services */
+
+  .service {
+    margin-bottom: 50px;
+  }
+
+  /* Trips */
+
+  .row-trips {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+
+  .trip {
+    margin-bottom: 100px;
+    max-width: 300px;
+  }
+
+/* Footer */
+
+  .row-footer {
+    margin: 20px 0 10px 0;
+  }
+
+  .social-media {
+    order: 1;
+  }
+
+  .copyright {
+    order: 2;
+    bottom: 0;
+    text-align: center;
+    margin-top: 5px;
+  }
+
+}
+
+/*@media (max-width: 576px) {
+  .trip {
+    width: 300px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .trip {
+    max-width: 300px;
+    margin: 0 5px;
+  }
+}*/
