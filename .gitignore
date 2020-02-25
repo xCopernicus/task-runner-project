@@ -108,8 +108,3 @@ dist
 
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
-
-#others
-.DS_Store
-vendor/
-images/
