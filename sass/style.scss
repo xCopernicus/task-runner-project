@@ -55,13 +55,14 @@ section {
 .navbar {
   justify-content: space-between;
   align-items: center;
-  height: 100px;
+  height: 40px;
   margin: 0;
 }
 
 .logo {
   padding: 50px;
   height: 100%;
+  display: none;
 }
 
 .logo i {
@@ -72,13 +73,13 @@ section {
 
 .navbar-menu {
   padding: 0;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
+  height: 30px;
+  justify-content: flex-start;
+  text-align: center;
 }
 
 .btn-nav {
-  padding-left: 18px;
+  padding-left: 1px;
 }
 
 .btn-link {
@@ -88,7 +89,8 @@ section {
   color: $color-white;
   width: 100%;
   height: 100%;
-  padding: 20px 13px;
+  padding: 0 5px;
+  margin-bottom: 20px;
 }
 
 .welcome-txt {
@@ -109,27 +111,27 @@ section {
 }
 
 .welcome-txt h1 {
-  font-size: 64px;
+  font-size: 24px;
   margin: 20px;
 }
 
 .welcome-txt h2 {
-  font-size: 48px;
+  font-size: 32px;
   margin: 0;
   font-family: $font-text;
   font-style: italic;
 }
 
 .btn-tellmore{
-  font-size: 20px;
+  font-size: 17px;
   display: inline-block;
   background-color: $color-primary;
-  width: 300px;
-  height: 80px;
+  width: 200px;
+  height: 50px;
   border-radius: 7px;
   text-align: center;
-  padding: 22px;
   margin-top: 30px;
+  line-height: 3;
 }
 
 /* Services */
@@ -140,6 +142,7 @@ section {
 
 .service {
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .service i {
@@ -174,13 +177,11 @@ section {
 }
 
 .row-trips {
-  height: 500px;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
   margin: 0;
-}
-
-.row-trips-1 {
-  margin: 50px 0;
 }
 
 .trip {
@@ -188,9 +189,10 @@ section {
   padding: 0;
   align-items: center;
   background-color: $color-white;
-  max-width: 350px;
   height: 500px;
   width: 350px;
+  margin-bottom: 100px;
+  max-width: 300px;
 }
 
 .link-trip {
@@ -230,11 +232,12 @@ section {
 
 
 .row-footer {
-  margin: 50px 0;
+  margin: 20px 0 10px 0;
 }
 
 .social-media {
   text-align: center;
+  order: 1;
 }
 
 .social-media a {
@@ -253,81 +256,84 @@ section {
   font-size: 14px;
 }
 
+.copyright {
+  order: 2;
+  bottom: 0;
+  text-align: center;
+  margin-top: 5px;
+}
+
 /* Media */
 
-@media (max-width: 768px) {
+@media (min-width: 992px) {
 
   /* Splash */
 
   .navbar {
-    height: 40px;
+    height: 100px;
   }
 
   .logo {
-    display: none;
+    display: block;
   }
 
   .navbar-menu {
-    height: 30px;
-    justify-content: flex-start;
-    text-align: center;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
   }
 
   .btn-nav {
-    padding-left: 1px;
+    padding-left: 18px;
   }
 
   .btn-link {
-    padding: 0 5px;
+    padding: 20px 13px;
   }
 
   .welcome-txt h1 {
-    font-size: 24px;
+    font-size: 64px;
   }
 
   .welcome-txt h2 {
-    font-size: 32px;
+    font-size: 48px;
   }
 
   .btn-tellmore {
-    padding: 22px;
+    font-size: 22px;
+    height: 80px;
+    width: 300px;
+    line-height: 2;
   }
 
   /* Services */
 
   .service {
-    margin-bottom: 50px;
+    margin-bottom: 0px;
   }
 
   /* Trips */
 
   .row-trips {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: auto;
+    justify-content: space-between;
+    flex-direction: row;
   }
 
   .trip {
-    margin-bottom: 100px;
-    max-width: 300px;
+    max-width: 350px;
   }
 
 /* Footer */
 
   .row-footer {
-    margin: 20px 0 10px 0;
+    margin: 50px 0;
   }
 
   .social-media {
-    order: 1;
+    order: 2;
   }
 
   .copyright {
     order: 2;
-    bottom: 0;
-    text-align: center;
-    margin-top: 5px;
   }
-
 }
